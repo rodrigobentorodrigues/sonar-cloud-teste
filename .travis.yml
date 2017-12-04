@@ -6,7 +6,7 @@ addons:
     token:
       secure: $SONAR_TOKEN # encrypted value of your token
     branches:
-      - *
+      - develop
 script:
   # other script steps might be done before running the actual analysis
   - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
